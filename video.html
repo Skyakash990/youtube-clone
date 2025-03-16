@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Player</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="video.css">
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <div class="hamburger">
+                <div></div>
+                <div></div> 
+                <div></div>
+            </div>
+            <div class="logo">
+                <img src="./assets/freepik__adjust__37456-removebg-preview.png" alt="">
+                <span>YouTube</span>
+            </div>
+            <div class="search-container">
+                <div class="search-input">
+                    <input type="text" placeholder="Search" name="" id="">
+                    <button><i class='bx bx-search' style='color:#c8c5c5'  ></i></button>
+                </div>
+            </div>
+            <div class="mic-option">
+                <i class='bx bxs-microphone' style='color:#f9f8f8'  ></i>
+            </div>
+            <div class="add-video">
+                <button><i class='bx bx-plus' style='color:#ffffff'  ></i>
+                    <span>Create</span></button>
+            </div>
+            <div class="notification">
+                <button><i class='bx bx-bell' style='color:#ffffff' ></i></button>
+            </div>
+            <div class="notif-badge">9+</div>
+            <div class="account">
+                <img src="./assets/3d glass window logo mockup copy.png" alt="">
+            </div>
+        </nav>
+    </header>
+
+    <!-- Video Player -->
+    <div class="video-player-container">
+        <div id="video-player">
+
+        </div>
+    </div>
+    <script type="module" src="/video.js"></script>
+</body>
+</html>
