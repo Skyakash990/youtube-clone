@@ -25,7 +25,7 @@ fetch(videoListUrl+generateQueryParam)
     })
     .catch((err)=>console.log(err));
 
-
+//get channel thumbnail from individual item to single array items
 const getChannelIcon =(video_data)=>{
     fetch(channelListUrl + new URLSearchParams({
         key:API_KEY,
@@ -38,6 +38,7 @@ const getChannelIcon =(video_data)=>{
         })
         .catch((err)=>console.log(err));
 }
+//make video card
 const makeVideoCard = (data) =>{
     const videoCard =document.createElement("div");
     videoCard.classList.add("video");

@@ -1,16 +1,18 @@
 
 import API_KEY from "./API_KEY.js";
-
+//Get data from url parameter like video.html?id=abc
 const urlParams= new URLSearchParams(window.location.search);
 const videoId = urlParams.get('id');
 console.log(videoId);
 
 
 const videoPlayerContainer=document.querySelector("#video-player");
+//video api url
 const videoListUrl = "https://youtube.googleapis.com/youtube/v3/videos?";
 
 
 if(videoId){
+    //create url params
     fetch(videoListUrl + new URLSearchParams({
         key:API_KEY,
         part:"snippet",
@@ -24,8 +26,6 @@ if(videoId){
         `
     })
     .catch((err)=>console.log(err))
-
-    
 }
 
 
